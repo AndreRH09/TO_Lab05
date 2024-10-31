@@ -18,7 +18,8 @@ void Comun1<T, N>::set(int num, T tval)
 }
 
 template <class T, int N>
-void Comun1<T, N>::get(int num){
+T Comun1<T, N>::get(int num)
+{
     return bloque[num];
 }
 
@@ -27,10 +28,13 @@ int main()
     Comun1<int, 5> objInt;
     Comun1<double, 5> objFloat;
     Comun1<> obj;
-    objInt set(0, 10);
+    
+    objInt.set(0, 10);
     objFloat.set(2, 3.1);
+    
     std::cout << objInt.get(0) << std::endl;
     std::cout << objFloat.get(2) << std::endl;
-    std::cout < < < < obj.get(4) << std::endl;
+    std::cout << obj.get(4) << std::endl;
+    
     return 0;
 }
