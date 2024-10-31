@@ -2,7 +2,9 @@
 #define TASK_H
 
 #include <QWidget>
-#include "ui_Task.h"
+#include <QCheckBox>
+#include <QPushButton>
+#include <QLabel>
 
 namespace Ui {
 class Task;
@@ -19,8 +21,16 @@ public:
 signals:
     void removeTask(Task *task);  // Señal para eliminar la tarea
 
+private slots:
+    void editSynonyms();  // Slot para editar los sinónimos
+    void removeTaskButton();  // Slot para manejar la eliminación de la tarea
+
 private:
     Ui::Task *ui;
+    QCheckBox *checkbox;
+    QLabel *synonymsLabel;
+    QPushButton *editButton;
+    QPushButton *removeButton;
 };
 
 #endif // TASK_H

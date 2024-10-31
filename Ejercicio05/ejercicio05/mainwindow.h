@@ -14,11 +14,11 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);  // Usa `explicit` para evitar conversiones implícitas
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void addTask();            // Slot para agregar una tarea
+    void addTask();            // Slot para agregar sinónimos
     void onTaskRemoved(Task* task);  // Slot para manejar la eliminación de una tarea
 
 private:

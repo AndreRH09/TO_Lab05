@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Agregar tarea</string>
+     <string>Agregar Sinonimo</string>
     </property>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -58,7 +58,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
